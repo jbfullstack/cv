@@ -75,6 +75,58 @@ h2 {
 .flag-icon-fr {
   background-image: url("../images/flags/french-flag.png");
 } */
+.skill-card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card .card-content {
+  position: relative;
+}
+
+.skill-card strong {
+  transition: color 0.6s ease; /* Add transition for the color property */
+}
+
+.skill-card:hover strong {
+  color: darkslategray; /* Adjust the color as desired */
+}
+
+.skill-card .progress-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease, padding 0.6s ease; /* Add transition for padding */
+}
+
+.skill-card:hover .progress-wrapper {
+  max-height: 500px;
+  transition-delay: 0.3s;
+  padding: 20px 0; /* Adjust the padding as desired */
+}
+
+.skill-card .skill {
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skill-card:hover .skill {
+  opacity: 1;
+  transition-delay: 0.6s;
+}
+
+.skill-card .progress-bar {
+  transition: width 0.3s ease;
+}
+
+
 
 .about,.skills,
 .education,.languages,
@@ -183,6 +235,29 @@ header hr {
   box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
 }
 
+/* language */
+#language-select {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.language-button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #3366CC;
+}
+
+.language-button.active {
+  background-color: #1c3974;
+}
+
 /* skills section */
 .skills {
   background: #3366CC;
@@ -199,6 +274,23 @@ header hr {
   display: inline-block;
   font-weight: normal;
   padding-bottom: 6px;
+}
+
+
+
+.download-button {
+  background-color: #3366CC;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 /* education section */
