@@ -1,4 +1,13 @@
 {
-    "main-title": "Expert Backend",
-    "main-subtitle": "Concepteur de logiciel"
+  "main-title": "Expert Backend",
+  "main-subtitle": "Concepteur de logiciel",
+  "laïus": "Informaticien de métier et de passion, je m’intéresse aux technologie qui me paraissent prometteuses.",
+
+  "skill-title": "Compétences",
+  "education-title": "Diplôme",
+  "bachelor-title": "Diplomé de l'Efrei en Technologies des systèmes d’Information",
+  "study-period": "Septembre 2012 - Juin 2015",
+  "education-description": "J'ai étudié pendant trois ans à Paris le développement informatique\net les technologies de l'information, où j'ai obtenu la meilleure note\nen programmation Java.\n Ces années d'études m'ont permis de consolider mes connaissances\net également de m'épanouir en affirmant mon goût pour l'informatique.",
+  "languages-title": "Langages",
+  "languages-content": "Français / Anglais"
 }

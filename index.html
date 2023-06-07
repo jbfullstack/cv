@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/templatemo-blue.css" />
+    <!-- Add the Flag-icon CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
+    />
   </head>
   <body data-spy="scroll" data-target=".navbar-collapse">
     <!-- preloader section -->
@@ -41,9 +46,12 @@
       </div>
 
       <select id="language-select">
-        <option value="en">English</option>
-        <option value="fr">French</option>
-        <!-- Add more language options as needed -->
+        <option value="en" selected>
+          <span class="flag-icon flag-icon-gb"></span>English
+        </option>
+        <option value="fr">
+          <span class="flag-icon flag-icon-fr"></span>French
+        </option>
       </select>
     </header>
 
@@ -52,34 +60,31 @@
       <div class="row">
         <div class="col-md-6 col-sm-12">
           <div class="about">
-            <h3 class="accent">Easy Profile</h3>
-            <h2>Bootstrap v3.3.5</h2>
-            <p>
-              This easy HTML profile is brought to you by templatemo website.
-              There are 4 color themes, <a href="index-green.html">Green</a>,
-              <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>,
-              and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque
-              elementum tempor eu id risus. Phasellus sed facilisis lacus, et
-              venenatis augue.
+            <h3 class="accent">Laïus</h3>
+            <h2></h2>
+            <p id="laïus">
+              As a professional and passionate computer scientist, I am
+              interested in technologies that seem promising to me.
             </p>
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="skills">
-            <h2 class="white">Skills</h2>
-            <strong>PHP MySQL</strong>
-            <span class="pull-right">70%</span>
+            <h2 id="skill-title" class="white">Skills</h2>
+            <strong>TypeScript</strong>
+            <span class="pull-right">95%</span>
             <div class="progress">
               <div
                 class="progress-bar progress-bar-primary"
                 role="progressbar"
-                aria-valuenow="70"
+                aria-valuenow="95"
                 aria-valuemin="0"
                 aria-valuemax="100"
-                style="width: 70%"
+                style="width: 95%"
               ></div>
             </div>
-            <strong>UI/UX Design</strong>
+
+            <strong>NestJs</strong>
             <span class="pull-right">85%</span>
             <div class="progress">
               <div
@@ -91,7 +96,99 @@
                 style="width: 85%"
               ></div>
             </div>
-            <strong>Bootstrap</strong>
+
+            <strong>Node.js</strong>
+            <span class="pull-right">80%</span>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-primary"
+                role="progressbar"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 80%"
+              ></div>
+            </div>
+
+            <strong>Angular</strong>
+            <span class="pull-right">70%</span>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-primary"
+                role="progressbar"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 70%"
+              ></div>
+            </div>
+
+            <strong>Linux</strong>
+            <span class="pull-right">65%</span>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-primary"
+                role="progressbar"
+                aria-valuenow="65"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 65%"
+              ></div>
+            </div>
+
+            <strong>NgRx</strong>
+            <span class="pull-right">60%</span>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-primary"
+                role="progressbar"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 60%"
+              ></div>
+            </div>
+
+            <strong>javascript</strong>
+            <span class="pull-right">60%</span>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-primary"
+                role="progressbar"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 60%"
+              ></div>
+            </div>
+
+            <strong>PostgresSQL</strong>
+            <span class="pull-right">75%</span>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-primary"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 75%"
+              ></div>
+            </div>
+
+            <strong>Docker</strong>
+            <span class="pull-right">55%</span>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-primary"
+                role="progressbar"
+                aria-valuenow="55"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 55%"
+              ></div>
+            </div>
+
+            <strong>Java</strong>
             <span class="pull-right">95%</span>
             <div class="progress">
               <div
@@ -113,31 +210,31 @@
       <div class="row">
         <div class="col-md-8 col-sm-12">
           <div class="education">
-            <h2 class="white">Education</h2>
+            <h2 id="education-title" class="white">Education</h2>
             <div class="education-content">
-              <h4 class="education-title accent">New Web Design</h4>
+              <h4 id="bachelor-title" class="education-title accent">
+                Bachelor Efrei in Information Technologies
+              </h4>
               <div class="education-school">
-                <h5>School of Media</h5>
+                <h5>EFREI</h5>
                 <span></span>
-                <h5>2030 January - 2034 December</h5>
+                <h5 id="study-period">2012 September - 2015 June</h5>
               </div>
-              <p class="education-description">
-                In lacinia leo sed quam feugiat, ac efficitur dui tristique. Ut
-                venenatis, odio quis cursus egestas, nulla sem volutpat diam, ac
-                dapibus nisl ipsum ut ipsum. Nunc tincidunt libero non magna
-                placerat elementum.
+              <p id="education-description" class="education-description">
+                I studied computer development and information technologies in
+                Paris for three years, where I achieved the highest grade in
+                Java programming. These years of study allowed me to strengthen
+                my knowledge and also to flourish by affirming my passion for
+                computer science.
               </p>
             </div>
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
           <div class="languages">
-            <h2>Languages</h2>
+            <h2 id="languages-title">Languages</h2>
             <ul>
-              <li>Myanmar / Thai</li>
-              <li>English / Spanish</li>
-              <li>Chinese / Japanese</li>
-              <li>Arabic / Hebrew</li>
+              <li id="languages-content">English / French</li>
             </ul>
           </div>
         </div>

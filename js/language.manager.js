@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
       // Load the resume content based on the selected language
       loadResumeContent(selectedLanguage);
     });
+
+    // initalisation part
+    loadResumeContent(languageSelect.value);
   
     function loadResumeContent(language) {
         // Fetch the JSON file based on the selected language

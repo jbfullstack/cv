@@ -1,4 +1,13 @@
 {
-    "main-title": "Backend Expert",
-    "main-subtitle": "Software Crafter"
+  "main-title": "Backend Expert",
+  "main-subtitle": "Software Crafter",
+  "laïus": "As a professional and passionate computer scientist, I am \ninterested in technologies that seem promising to me.",
+
+  "skill-title": "Skills",
+  "education-title": "Education",
+  "bachelor-title": "Bachelor Efrei in nformation Systems Technologies",
+  "study-period": "2012 September - 2015 June",
+  "education-description": " I studied computer development and information technologies in Paris \nfor three years, where I achieved the highest grade in Java programming.\nThese years of study allowed me to strengthen my knowledge and also to\nflourish by affirming my passion for computer science.",
+  "languages-title": "Languages",
+  "languages-content": "English / French"
 }

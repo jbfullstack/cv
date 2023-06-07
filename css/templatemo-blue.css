@@ -57,6 +57,25 @@ h2 {
   color: #fff;
 }
 
+
+
+/* .flag-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+}
+
+.flag-icon-gb {
+  background-image: url("../images/flags/english-flag.png");
+}
+
+.flag-icon-fr {
+  background-image: url("../images/flags/french-flag.png");
+} */
+
 .about,.skills,
 .education,.languages,
 .contact, .experience {
