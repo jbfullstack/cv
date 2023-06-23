@@ -37,7 +37,7 @@
         </button>
       </div>
   
-      <a id="download-resume-btn" class="download-button sticky" href="./pdf/jeremy-brunel-cv.pdf" download>Download Resume</a>
+      <a id="download-resume-btn" class="download-button sticky" href="./pdf/jeremy-brunel-cv.pdf" target="_blank" download>Download Resume</a>
   </section>
 
     <!-- header section -->
@@ -89,12 +89,11 @@
         
         <div class="col-md-6 col-sm-12">
           <div class="skills">
-            <!-- <h3 id="skill-title" class="skills">Skills</h3> -->
             <h3 id="skill-title" class="white">Skills</h3>
             <div class="skill-card" id="typescript-card">
-              <div class="card-content">
-                <strong> Backend </strong>
-                  <div class="progress-wrapper">
+              <div class="card-content" onmouseover="startLoad(this)" onmouseout="stopLoad(this)">
+                <strong>Backend</strong>
+                <div class="progress-wrapper">
                   <strong>TypeScript</strong>
                   <div class="progress-container">
                     <div class="range" style="--p: 95;">
@@ -117,94 +116,74 @@
               </div>
             </div>
         
-          <!-- </div>
-        </div> -->
+            <div class="skill-card" id="typescript-card">
+              <div class="card-content" onmouseover="startLoad(this)" onmouseout="stopLoad(this)">
+                <strong>Frontend</strong>
+                <div class="progress-wrapper">
+                  <strong>Angular</strong>
+                  <div class="progress-container">
+                    <div class="range" style="--p: 75;">
+                      <div class="range__label"></div>
+                    </div>
+                  </div>
+                  <strong>NgRx</strong>
+                  <div class="progress-container">
+                    <div class="range" style="--p: 70;">
+                      <div class="range__label"></div>
+                    </div>
+                  </div>
+                  <strong>CSS</strong>
+                  <div class="progress-container">
+                    <div class="range" style="--p: 7;">
+                      <div class="range__label"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         
 
 
             <div class="skill-card" id="typescript-card">
-              <div class="card-content">
-                <strong> Frontend </strong>
+              <div class="card-content" onmouseover="startLoad(this)" onmouseout="stopLoad(this)">
+                <strong>Database</strong>
                 <div class="progress-wrapper">
-                  <div class="progress-bar-component" data-skill="Angular" data-value="75"></div>
-                  <div class="progress-bar-component" data-skill="NgRx" data-value="70"></div>
-
-                  <span>NgRx</span>
-                  <div class="progress">
-                    <div
-                      class="progress-bar progress-bar-primary"
-                      role="progressbar"
-                      aria-valuenow="70"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="width: 70%"
-                    ></div>
+                  <strong>SQL</strong>
+                  <div class="progress-container">
+                    <div class="range" style="--p: 90;">
+                      <div class="range__label"></div>
+                    </div>
+                  </div>
+                  <strong>Postgres</strong>
+                  <div class="progress-container">
+                    <div class="range" style="--p: 82;">
+                      <div class="range__label"></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="skill-card" id="typescript-card">
-              <div class="card-content">
-                <strong> Database </strong>
+              <div class="card-content" onmouseover="startLoad(this)" onmouseout="stopLoad(this)">
+                <strong>DevOps</strong>
                 <div class="progress-wrapper">
-                  <span>SQL</span>
-                  <div class="progress">
-                    <div
-                      class="progress-bar progress-bar-primary"
-                      role="progressbar"
-                      aria-valuenow="90"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="width: 90%"
-                    ></div>
+                  <strong>Docker</strong>
+                  <div class="progress-container">
+                    <div class="range" style="--p: 70;">
+                      <div class="range__label"></div>
+                    </div>
                   </div>
-
-                  <span>Postgres</span>
-                  <div class="progress">
-                    <div
-                      class="progress-bar progress-bar-primary"
-                      role="progressbar"
-                      aria-valuenow="82"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="width: 82%"
-                    ></div>
+                  <strong>Linux</strong>
+                  <div class="progress-container">
+                    <div class="range" style="--p: 65;">
+                      <div class="range__label"></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="skill-card" id="typescript-card">
-              <div class="card-content">
-                <strong> DevOps </strong>
-                <div class="progress-wrapper">
-                  <span>Docker</span>
-                  <div class="progress">
-                    <div
-                      class="progress-bar progress-bar-primary"
-                      role="progressbar"
-                      aria-valuenow="70"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="width: 70%"
-                    ></div>
-                  </div>
-
-                  <span>Linux</span>
-                  <div class="progress">
-                    <div
-                      class="progress-bar progress-bar-primary"
-                      role="progressbar"
-                      aria-valuenow="65"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="width: 65%"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

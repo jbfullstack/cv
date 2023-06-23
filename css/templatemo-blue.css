@@ -100,6 +100,25 @@ h2 {
   background-color: #1c3974;
 }
 
+a:focus, a:hover {
+  color: #ffffff;
+  text-decoration: none !important;
+  background: #2d5bb5;
+}
+
+.download-button {
+    
+  background-color:#3366CC;
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+}
 
 
 /* .flag-icon {

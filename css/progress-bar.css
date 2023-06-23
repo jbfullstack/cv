@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 .progress-container {
   position: relative;
+  overflow: hidden; /* Add this line */
 }
 
 .progress-container .range {
@@ -20,7 +22,7 @@
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #F3E600;
+  background-color: #337ab7;
   z-index: 0;
   animation: none;
 }
@@ -42,11 +44,11 @@
   line-height: 1.5;
 }
 
-.progress-container:hover .range:before {
+.skill-card:hover .progress-container .range:before {
   animation: load 0.5s forwards linear;
 }
 
-.progress-container:hover .range:after {
+.skill-card:hover .progress-container .range:after {
   animation: none;
 }
 
@@ -56,5 +58,14 @@
   }
   to {
     width: var(--width);
+  }
+}
+
+@keyframes unload {
+  from {
+    width: var(--width);
+  }
+  to {
+    width: 0;
   }
 }

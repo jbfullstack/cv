@@ -30,3 +30,18 @@ progressBarElements.forEach((element) => {
   element.innerHTML = '';
   element.appendChild(progressBar);
 });
+
+function startLoad(element) {
+    const progressContainers = element.querySelectorAll('.progress-container');
+    progressContainers.forEach((container) => {
+      container.querySelector('.range').style.animation = 'load 0.5s forwards linear';
+    });
+  }
+  
+  function stopLoad(element) {
+    const progressContainers = element.querySelectorAll('.progress-container');
+    progressContainers.forEach((container) => {
+      container.querySelector('.range').style.animation = 'unload 0.5s forwards linear';
+    });
+  }
+  
