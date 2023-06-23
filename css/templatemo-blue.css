@@ -57,6 +57,49 @@ h2 {
   color: #fff;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  /* width: 100%; */
+  z-index: 100;
+  padding: 10px; /* Add padding for spacing */
+}
+
+
+.download-button {
+  background-color: #3366CC;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.sticky.download-button {  
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.language-button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #3366CC;
+}
+
+.language-button.active {
+  background-color: #1c3974;
+}
+
 
 
 /* .flag-icon {
@@ -235,21 +278,6 @@ header hr {
   box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
 }
 
-.language-button {
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 8px;
-  background-color: #3366CC;
-}
-
-.language-button.active {
-  background-color: #1c3974;
-}
 
 /* Updated CSS for button container */
 .button-container {
@@ -260,17 +288,7 @@ header hr {
   margin-top: 20px; /* Optional: Add margin-top for spacing */
 }
 
-.download-button {
-  background-color: #3366CC;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 8px;
-}
+
 
 /* Move the container div for language buttons and download button */
 .container-buttons {
