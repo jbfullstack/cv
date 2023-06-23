@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/templatemo-blue.css" />
     <link rel="stylesheet" href="css/progress-bar.css" />
+    <link rel="stylesheet" href="css/experience.css" />
     <!-- Add the Flag-icon CSS -->
     <link
       rel="stylesheet"
@@ -225,6 +226,96 @@
       </div>
     </section>
 
+    <section class="container">
+      
+      <div class="experience">
+        <h2 id="experience-title" class="white">Experiences</h2>
+
+        <div class="progress-bar">
+          <div class="step active">
+            <div class="step-label">2023-03 -     now</div>
+            <div class="step-indicator">🚗</div>
+            <div class="step-content">
+              <div class="enterprise-name">Renault lab</div>
+              <div class="step-description">Développement de l'application FleetOs. Trop lourd, environement exigent. Whaaal c'était chaud !</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-label">2022-11 - 2023-03</div>
+            <div class="step-indicator">🚀</div>
+            <div class="step-content">
+              <div class="enterprise-name">Bashroom R&D</div>
+              <div class="step-description">Popopoooo les copains :D Aight !</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-label">2021-02 - 2022-07</div>
+            <div class="step-indicator">✈️</div>
+            <div class="step-content">
+              <div class="enterprise-name">Amadeus</div>
+              <div class="step-description">Cytric, reservation hotel et parametrage pour entreprise</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-label">2020-09 - 2021-01</div>
+            <div class="step-indicator">💳</div>
+            <div class="step-content">
+              <div class="enterprise-name">AltenLab</div>
+              <div class="step-description">Une application pour toutes comptes bancaires</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-label">2019-09 - 2020-08</div>
+            <div class="step-indicator">✈️</div>
+            <div class="step-content">
+              <div class="enterprise-name">Amadeus</div>
+              <div class="step-description">Aetm et cytric !</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-label">2016-10 - 2017-11</div>
+            <div class="step-indicator">📡</div>
+            <div class="step-content">
+              <div class="enterprise-name">OBS</div>
+              <div class="step-description">Gestion de vie des routeurs Orange</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-label">2015-02 - 2016-09</div>
+            <div class="step-indicator">🏛️</div>
+            <div class="step-content">
+              <div class="enterprise-name">RSI</div>
+              <div class="step-description">Adhesion et radiation automatique des indépendants de France</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-label">2014-04 - 2014-10</div>
+            <div class="step-indicator">✈️</div>
+            <div class="step-content">
+              <div class="enterprise-name">Air France</div>
+              <div class="step-description">Plateform de Test UI avec selenium !</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-label">??? - ???</div>
+            <div class="step-indicator">🏗️</div>
+            <div class="step-content">
+              <div class="enterprise-name">Eiffage</div>
+              <div class="step-description">Sauvetage MGL</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-label">??? - ???</div>
+            <div class="step-indicator">🚛</div>
+            <div class="step-content">
+              <div class="enterprise-name">Mauro</div>
+              <div class="step-description">Livraison alternance</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
     <!-- contact and experience -->
     <section class="container">
       <div class="row">
@@ -244,6 +335,7 @@
             </p>
           </div>
         </div>
+      </section>
         <!-- <div class="col-md-8 col-sm-12">
           <div class="experience">
             <h2 class="white">Experiences</h2>
@@ -260,8 +352,7 @@
             </div>
           </div>
         </div> -->
-      </div>
-    </section>
+      
 
     <!-- footer section -->
     <!-- <footer>
@@ -300,5 +391,16 @@
     <script src="js/language.manager.js"></script>
     <script src="js/progress.bar.js"></script>
     
+    <script>
+      $(document).ready(function() {
+        $('.step').click(function() {
+          $('.step').removeClass('active clicked');
+          $(this).addClass('active clicked');
+          $('.step-description').hide();
+          $(this).find('.step-description').show();
+        });
+      });
+    </script>
+
   </body>
 </html>
