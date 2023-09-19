@@ -1,0 +1,99 @@
+.carousel {
+    position: relative;
+  }
+  
+  .triangle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .right-triangle {
+    position: absolute;
+    top: 35%;
+    left: 105%;
+    transform: translateY(-50%);
+    z-index: 1;
+    transition: 0.3s ease, transform 0.3s ease;
+  }
+
+  .right-triangle:hover {
+    color: blue;
+    transform: translateY(-50%) scale(1.5);    
+  }
+
+  
+  .skills-container {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.skill-catagory-title {
+    margin-top: -20px;
+}
+
+.skills-catagory {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    animation: slide-out 0.3s forwards ease-out;
+  }
+  
+  .skills-catagory.active {
+    animation: slide-in 0.3s forwards ease-out;
+  }
+
+  @keyframes slide-in {
+    0% {
+      transform: translateX(100%);
+      visibility: visible;
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-out {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  
+  .skill-content {
+    padding: 10px;
+  }
+  
+ 
+  
+  .skill-title {
+    margin: 10px 0;
+  }
+  
+  .progress {
+    background-color: #f1f1f1;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    background-color: #4caf50;
+    height: 100%;
+    line-height: 10px;
+    color: white;
+    text-align: center;
+  }
+  

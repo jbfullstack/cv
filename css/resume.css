@@ -1,0 +1,116 @@
+/* RESUME */
+
+.resume {
+    margin-top: -50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    /* background-color: #f9f9f9; */
+    /* background: linear-gradient(454deg, #22b1aa, #53f4ff); */
+    background: linear-gradient(454deg, #2330aa, #20297794);
+}
+
+.resume h3{
+    margin-bottom: 50px;
+}
+
+.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+.timeline:before {
+    content: '';
+    background: #555;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 1;
+}
+
+.timeline li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background: transparent;
+}
+
+
+
+.timeline li h4 {
+    background-color: #0e3397de;
+    padding: 5px 0 5px 20px;
+    color: #ccc;
+    font-size: 15px;
+}
+
+.timeline li h4 span {
+    font-weight: bold;
+    color: #fff;
+}
+
+.timeline li:before {
+    content: '';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #000;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    transition: transform  0.3s ease;
+}
+
+.timeline li:hover:before {
+    transform: scale(1.5);
+    /* border: 3px solid #fff;
+    background: #000; */
+}
+
+
+.desc {
+    
+    padding: 20px 40px;
+    position: fixed; 
+    top: 30%;  
+    background-color: #fff;
+    border-radius: 5px;
+    display: none;
+}
+
+.desc.active {
+    display: block;
+}
+
+/* Step description */
+.description-container {
+    /* Other properties */
+    display: none;
+    flex-grow: 1;
+    max-width: 40%;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .description-container .step-description {
+    color: #999;
+  }
+
+
+  .logos {
+    display: flex;
+    justify-content: space-around; /* distributes the remaining space around items */
+    margin-top: 10px; /* adjust as needed */
+  }
+  
+  .tech-logo {
+    font-size: 2em; /* adjust as needed */
+  }
+  
+
+

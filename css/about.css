@@ -1,0 +1,55 @@
+/* .about {
+    background-image: url(../images/10068.jpg);
+    background-size: 150%;
+} */
+.profile-img {
+    height: 400px;
+}
+
+/* SKILLS */
+.skills-catagory {
+padding: 15px;
+}
+
+.skill-catagory-title {
+font-weight: bold;
+margin: 0;
+position: absolute;
+margin: -15px 0 10px 10px;
+background-color: white;
+padding: 0px 5px;
+z-index: 1;
+}
+
+.skills-catagory {
+border: 1px solid black;
+border-radius: 5px;
+padding: 10px;
+position: relative;
+}
+
+.skills-bar p {
+margin-bottom: 6px;
+font-weight: 600;
+}
+
+.progress {
+border-radius: 16px !important;
+margin-bottom: 10px;
+}
+
+.progress-bar {
+border-radius: 16px;
+background-image: linear-gradient(454deg, var(--start-radient-color), var(--end-radient-color));
+}
+
+@media (max-width: 980px) {
+
+    .about .profile-img {
+        height: 200px;
+    }
+
+    .about .col-md-6 {
+      flex: 0 0 100%;
+    }
+}
